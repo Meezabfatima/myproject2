@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="formcss.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+    <div class="form">
+    <form action="pagesubmit.html" method="GET" target="_blank" autocomplete="on" class="allaboutyouform">
+  
+        <h1>Form</h1>
+        <label for="username"><span style="color:red">Name:</span></label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" maxlenght="15" required>
+    
+    
+        <label for="password"><span style="color:blue">password:</span></label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"  minlength="5" maxlenght="15" required autocomplete="off">
+    
+    
+        <label for="email"><span style="color:green">email:</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter your emal" required autocomplete="off">
+    
+
+
+        <label for="B-day"><span style="color:yellow">Birthday:</span></label>
+        <input type="date" id="B-day" name="B-day" required>
+    
+
+    
+        <label for="age"><span style="color:orange">age:</span></label>
+        <input type="number" id="age" name="age" min="1" max="200" value="1" required>
+    
+
+    
+        <label for="fav-color"><span style="color:pink">Pick your favorite color:</span></label>
+        <select id="fav-color" name="favoritecolor">
+            <option style="color:red"value="red">red</option>
+     
+    
+            <option style="color:blue"value="blue">
+                blue
+            </option>
+    
+            <option style="color:green"value="green">
+                green
+            </option>
+    
+            <option style="color:yellow"value="yellow">
+                yellow
+            </option>
+    
+            <option style="color:orange"value="orange">
+                orange
+            </option>
+    
+            <option style="color:pink"value="pink">
+                pink
+            </option>
+        </select>
+    
+
+    <label style="color:purple">Pick your favorite PET:</label>
+    
+    
+    
+        <label for="dog">dog/puppy</label>
+        <input type="radio" id="dog" name="favanimal" value="dog" checked>
+    
+    
+    
+        <label for="cat">cat/kitten</label>
+        <input type="radio" id="cat" name="favanimal" value="cat">
+    
+    
+    
+        <label for="budgie">parakeets/budgie</label>
+        <input type="radio" id="budgie" name="favanimal" value="budgie">
+    
+    
+    
+        <label for="macaw">macaw/parrots</label>
+        <input type="radio" id="macaw" name="favanimal" value="parrot">
+    
+    
+
+        <label for="bunny">bunny/rabbit</label>
+        <input type="radio" id="bunny" name="favanimal" value="bunny">
+    
+    
+    
+        <label for="fish">goldfish/fish</label>
+        <input type="radio" id="fish" name="favanimal" value="fish">
+    
+    
+    
+        <label for="turtle">turtle/tortoise</label>
+        <input type="radio" id="turtle" name="favanimal" value="turtle">
+    
+
+    
+    
+    <label style="color: aqua;">Favorite food:</label><br>
+  
+    <input type="checkbox" id="biryani" name="fav_food" value="biryani">
+    <label for="biryani">Biryani</label>
+    
+    <input type="checkbox" id="mutton_pulaw" name="fav_food" value="mutton_pulaw">
+    <label for="mutton_pulaw">Mutton pulaw</label>
+    
+    <input type="checkbox" id="chicken_korma" name="fav_food" value="chicken_korma">
+    <label for="chicken_korma">Chicken korma</label>
+
+    <input type="checkbox" id="whitesauce_pasta" name="fav_food" value="whitesauce_pasta">
+    <label for="whitesauce_pasta">White Sauce Pasta</label>
+    
+    <Label for="proofpic" style="color: blue;">Add the image of an orange cat to prove you are not a robot.</Label>
+    <input type="file" id="proofpic" name="proofpic" accept=".png" autocomplete="off" required>
+ 
+    <label for="time" style="color: blueviolet;"> Add the current time:</label>
+    <input type="time" id="time" name="time">
+
+    <label for="datentime" style="color:lightseagreen;"> Add the current date-time in your local surroundings:</label>
+    <input type="datetime-local" id="datetime" name="datetime">
+
+    <label style="color: brown;"for="address">Write your address:</label>
+
+    <textarea id="address" rows="5" cols="20" name="address" required></textarea>
+    
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+    <button class="warning" onclick="alert('WARNING! dont submit its a warning unless you want all your personal data leaked')">Warning button!</button>
+    </form>
+</div>
+</body>
+</html>
